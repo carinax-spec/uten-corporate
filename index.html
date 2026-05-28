@@ -42,11 +42,23 @@
             padding: 0 30px;
         }
 
+        /* 2. 題頭標題與 Logo 佈局 */
         .corporate-header {
             border-bottom: 1px solid var(--accent-border);
             padding-bottom: 40px;
             margin-bottom: 60px;
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Logo 圖片樣式（可根據實際 Logo 形狀微調高度） */
+        .company-logo {
+            height: 50px; /* 預設高度，可根據您的 Logo 比例自行調整 */
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 15px; /* 與下方公司名稱的間距 */
         }
 
         .company-name {
@@ -137,8 +149,10 @@
 </div>
 
 <main>
-    <!-- 2. 企業識別 -->
+    <!-- 2. 企業識別（已新增 Logo 版位） -->
     <header class="corporate-header">
+        <!-- 💡 請將您的 Logo 圖片命名為 logo.png 並上傳至 GitHub，網頁就會自動讀取 -->
+        <img src="logo.png" alt="羽天株式会社 Logo" class="company-logo">
         <h1 class="company-name">羽天株式会社</h1>
         <div class="company-sub">Uten Co., Ltd.</div>
     </header>
@@ -166,7 +180,7 @@
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 海外（主に中国在住）の富裕層・準富裕層の個人投資家様を対象に、日本国内の不動産（土地・マンション）売買に関するトータルコンサルティングを提供しております。<br><br>
                 弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力関係を構築しています。海外投資家様による日本国内案件の実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
-                また、単なる物件売買にと對動せず、土地買収後のホテル・マンション建築計画の立案から落成後の運用にいたるまで、確かな実務サポートで投資価値の最大化を支援いたします。
+                また、単なる物件売買にとどまらず、土地買収後のホテル・マンション建築計画の立案から落成後の運用にいたるまで、確かな実務サポートで投資価値の最大化を支援いたします。
             </p>
         </div>
 
@@ -179,12 +193,12 @@
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 既に日本国内の不動産物件に投資されている在日・訪日外国人オーナー様を対象に、民宿やホテルといった宿泊施設の経営診断、コンサルティング、リブランディング（改革）、および代行運営サービスを展開しております。<br><br>
                 「日本に常駐していないため、現地的確な管理やトラブル対応が難しい」という海外オーナー様の不便を解消すべく、所有資産の現状をプロの視点で診断・整理し、市場ニーズに合わせた最適な「盤活（資産活性化）」プランをご提案いたします。<br><br>
-                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質なサービスを提供し、オーナー様の未来への懸念を払拭いたします。
+                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質な服务を提供し、オーナー様の未来への懸念を払拭いたします。
             </p>
         </div>
     </section>
 
-    <!-- 5. 企業概要（已更新地址、電話） -->
+    <!-- 5. 企業概要（唯一保留完整地址之處） -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -211,11 +225,10 @@
         </table>
     </section>
 
-    <!-- 6. 頁尾（已更新細節） -->
+    <!-- 6. 頁尾（已刪除冗餘地址，極簡洗練） -->
     <footer>
         <div style="margin-bottom: 15px; font-size: 0.8rem; line-height: 1.8;">
             羽天株式会社 | Uten Co., Ltd.<br>
-            大阪府大阪市中央区南久宝寺町４丁目５番17号 アップウェル船場201室<br>
             Tel: 06-7220-9735
         </div>
         &copy; 2026 Uten Co., Ltd. All Rights Reserved.
