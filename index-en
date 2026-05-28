@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uten Co., Ltd. | Official Corporate Site</title>
+    <style>
+        :root {
+            --bg-light: #fdfdfd;
+            --text-main: #1a1a1a;
+            --text-muted: #666666;
+            --accent-border: #cccccc;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 2.0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 480px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eee;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto 120px auto;
+            padding: 0 40px;
+        }
+
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+        }
+        .lang-switcher a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .lang-switcher a.active {
+            color: var(--text-main);
+            font-weight: bold;
+        }
+        .lang-switcher a:hover {
+            color: var(--text-main);
+        }
+        .lang-separator {
+            opacity: 0.3;
+        }
+
+        .corporate-header {
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 45px;
+            margin-bottom: 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .company-logo {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 25px;
+        }
+
+        .company-name {
+            font-size: 2.2rem;
+            letter-spacing: 0.2rem;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .company-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .brand-mantra-header {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            letter-spacing: 0.2rem;
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-weight: normal;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .section-block {
+            margin-bottom: 120px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            margin-bottom: 35px;
+            font-weight: bold;
+        }
+
+        .concept-p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .business-card {
+            margin-bottom: 80px;
+        }
+        .business-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            background-color: #eee;
+        }
+
+        .brand-link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #eaeaea;
+            padding: 60px 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .jewelry-brand-logo {
+            max-width: 80%;
+            height: auto;
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            transition: opacity 0.2s ease;
+        }
+        .jewelry-brand-logo:hover {
+            opacity: 0.7;
+        }
+        .brand-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 50px;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .brand-btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-light);
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        .profile-table tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+        .profile-table th {
+            width: 30%;
+            text-align: left;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+        .profile-table td {
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        footer {
+            margin-top: 160px;
+            border-top: 1px solid var(--accent-border);
+            padding-top: 40px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-banner">
+    <img src="banner.jpg" alt="Uten Co., Ltd. Headquarter Area">
+</div>
+
+<main>
+    <nav class="lang-switcher">
+        <a href="index.html">JP</a>
+        <span class="lang-separator">/</span>
+        <a href="index-en.html" class="active">EN</a>
+        <span class="lang-separator">/</span>
+        <a href="index-cn.html">CN</a>
+    </nav>
+
+    <header class="corporate-header">
+        <img src="logo.png" alt="Uten Co., Ltd. Logo" class="company-logo">
+        <h1 class="company-name">Uten Co., Ltd.</h1>
+        <div class="company-sub">羽天株式会社</div>
+        <span class="brand-mantra-header">Spread the wings, reach the sky.</span>
+    </header>
+
+    <section class="section-block">
+        <h2>Philosophy</h2>
+        <p class="concept-p">
+            <strong>"Creating New Values, Crafting a Refined Future"</strong><br><br>
+            At Uten Co., Ltd., we harmonize with modern diverse lifestyles, presenting exceptional values to society through uncompromising quality and our unique aesthetic perspective.<br><br>
+            While maintaining a global vision, we deeply cherish the meticulous sense of Japanese beauty. Committed to continuous innovation and constant challenges, we aim to deliver subtle abundance and sustainable brilliance to everyday life through our cross-border operations.
+        </p>
+    </section>
+
+    <section class="section-block">
+        <h2>Our Business</h2>
+        
+        <div class="business-card">
+            <img src="consulting.jpg" alt="Global Investment Consulting" class="business-img">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ Global Investment Consulting Business
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                We provide comprehensive consulting services for high-net-worth and affluent international investors (primarily based in China) regarding real estate acquisition (land and residential properties) within Japan.<br><br>
+                Our firm maintains strategic partnerships with prominent enterprises in China, including "Shanghai Zhouxing Corporate Management Consulting Co., Ltd." and "Shanghai Yulu Yun Information Technology Co., Ltd." Upon the successful launch of domestic investment projects, we offer seamless local asset management and property operation services in Japan.<br><br>
+                Furthermore, moving beyond simple transactions, we support the maximization of investment values through expert, full-cycle execution—spanning from land acquisition planning to the development and ultimate operation of boutique hotels and premium apartments.
+            </p>
+        </div>
+
+        <div class="business-card">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ Jewelry & E-Commerce Business
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                Launched in January 2026. Rooted in rigorous pearl selection standards and our sophisticated "Mode Style" design philosophy, we manage the complete creation, manufacturing, cross-border e-commerce, and import/export trade of our house pearl jewelry brand. We deliver a modern pearl aesthetic that embodies quiet elegance and understated maturity on a global scale.
+            </p>
+            
+            <div class="brand-link-container">
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
+                    <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
+                </a>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    The Undefined Mode Style — Refined Pearl Aesthetics
+                </div>
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer" class="brand-btn">
+                    Official Brand Site ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <h2>Company Profile</h2>
+        <table class="profile-table">
+            <tr>
+                <th>Company Name</th>
+                <td>Uten Co., Ltd. (羽天株式会社)</td>
+            </tr>
+            <tr>
+                <th>Date of Establishment</th>
+                <td>March 2024</td>
+            </tr>
+            <tr>
+                <th>Core Businesses</th>
+                <td>
+                    · Global Investment Consulting Services<br>
+                    · Pearl Jewelry Branding, E-Commerce, and Global Import/Export Trade
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
+            <strong>Uten Co., Ltd.</strong><br>
+            Address: Room 201, Upwell Semba, 4-5-17 Minamikyuhojimachi, Chuo-ku, Osaka, 542-0081, Japan<br>
+            Tel: +81-6-7220-9735
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.75rem;">
+            &copy; 2024 - 2026 Uten Co., Ltd. All Rights Reserved.
+        </div>
+    </footer>
+</main>
+
+</body>
+</html>
