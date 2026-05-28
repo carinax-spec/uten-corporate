@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uten Co., Ltd. | Official Corporate Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --bg-light: #fdfdfd;
             --text-main: #1a1a1a;
             --text-muted: #666666;
             --accent-border: #cccccc;
+            /* 💡 定義英文版專屬的字體家族 */
+            --font-title: 'Playfair Display', 'Georgia', serif;
+            --font-body: 'Helvetica Neue', Arial, sans-serif;
         }
 
         body {
-            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-family: var(--font-body);
             margin: 0; padding: 0;
             background-color: var(--bg-light);
             color: var(--text-main);
-            line-height: 2.0;
+            line-height: 1.7; /* 💡 從 2.0 收緊至 1.7，讓英文段落更緊湊、更嚴謹 */
             -webkit-font-smoothing: antialiased;
         }
 
@@ -84,9 +91,10 @@
         }
 
         .company-name {
-            font-size: 2.2rem;
-            letter-spacing: 0.2rem;
-            font-weight: 500;
+            font-family: var(--font-body);
+            font-size: 2.4rem;
+            letter-spacing: 0.1rem;
+            font-weight: 600;
             margin: 0;
             line-height: 1.2;
         }
@@ -94,37 +102,41 @@
         .company-sub {
             font-size: 0.85rem;
             color: var(--text-muted);
-            letter-spacing: 1px;
-            margin-top: 10px;
+            letter-spacing: 2px;
+            margin-top: 12px;
             margin-bottom: 0;
             text-transform: uppercase;
             line-height: 1.2;
         }
 
+        /* 💡 優化後的 Slogan 樣式：使用優雅的襯線體，字距適中，充滿智性美 */
         .brand-mantra-header {
-            font-size: 1.05rem;
+            font-family: var(--font-title);
+            font-size: 1.25rem;
             color: var(--text-main);
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.05rem;
             display: block;
-            margin-top: 25px;
+            margin-top: 30px;
             margin-bottom: 5px;
-            font-weight: normal;
+            font-weight: 500;
+            font-style: italic; /* 保持意大利斜體的浪漫，但字體更高級 */
             line-height: 1.4;
-            font-style: italic;
         }
 
         .section-block {
-            margin-bottom: 120px;
+            margin-bottom: 100px;
             text-align: left;
         }
 
+        /* 💡 區塊大標題改為襯線體，像時尚雜誌一樣端莊大氣 */
         h2 {
-            font-size: 1.1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            font-family: var(--font-title);
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            text-transform: none; /* 取消純大寫，改為首字母大寫，更具當代設計感 */
             color: var(--text-main);
-            margin-bottom: 35px;
-            font-weight: bold;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         .concept-p {
@@ -133,15 +145,35 @@
             text-align: justify;
         }
 
+        /* 💡 稍微強化核心理念首句的視覺卷重 */
+        .concept-lead {
+            font-family: var(--font-title);
+            font-size: 1.15rem;
+            display: block;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
         .business-card {
-            margin-bottom: 80px;
+            margin-bottom: 70px;
         }
         .business-img {
             width: 100%;
-            height: 320px;
+            height: 340px;
             object-fit: cover;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             background-color: #eee;
+        }
+
+        .business-title {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: var(--text-main);
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         .brand-link-container {
@@ -150,7 +182,7 @@
             align-items: center;
             background-color: #f9f9f9;
             border: 1px solid #eaeaea;
-            padding: 60px 40px;
+            padding: 50px 40px;
             margin-top: 40px;
             text-align: center;
         }
@@ -168,7 +200,7 @@
         }
         .brand-btn {
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 25px;
             padding: 10px 50px;
             border: 1px solid var(--text-main);
             color: var(--text-main);
@@ -185,7 +217,7 @@
         .profile-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         .profile-table tr {
             border-bottom: 1px solid #eeeeee;
@@ -193,25 +225,25 @@
         .profile-table th {
             width: 30%;
             text-align: left;
-            padding: 20px 0;
+            padding: 18px 0;
             font-size: 0.9rem;
             color: var(--text-muted);
-            font-weight: normal;
+            font-weight: 600; /* 💡 稍微加粗項目名稱，看起來更有秩序 */
         }
         .profile-table td {
-            padding: 20px 0;
+            padding: 18px 0;
             font-size: 0.9rem;
             color: var(--text-main);
             text-align: justify;
         }
 
         footer {
-            margin-top: 160px;
+            margin-top: 140px;
             border-top: 1px solid var(--accent-border);
             padding-top: 40px;
             font-size: 0.75rem;
             color: var(--text-muted);
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -238,23 +270,21 @@
     </header>
 
     <section class="section-block">
-        <h2>Philosophy</h2>
+        <h2>Corporate Philosophy</h2>
         <p class="concept-p">
-            <strong>"Creating New Values, Crafting a Refined Future"</strong><br><br>
+            <span class="concept-lead">"Creating New Values, Crafting a Refined Future"</span>
             At Uten Co., Ltd., we harmonize with modern diverse lifestyles, presenting exceptional values to society through uncompromising quality and our unique aesthetic perspective.<br><br>
             While maintaining a global vision, we deeply cherish the meticulous sense of Japanese beauty. Committed to continuous innovation and constant challenges, we aim to deliver subtle abundance and sustainable brilliance to everyday life through our cross-border operations.
         </p>
     </section>
 
     <section class="section-block">
-        <h2>Our Business</h2>
+        <h2>Core Businesses</h2>
         
         <div class="business-card">
             <img src="consulting.jpg" alt="Global Investment Consulting" class="business-img">
-            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
-                ■ Global Investment Consulting Business
-            </strong>
-            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+            <span class="business-title">■ Global Investment Consulting Business</span>
+            <p style="font-size: 0.9rem; color: #222; margin: 0; text-align: justify;">
                 We provide comprehensive consulting services for high-net-worth and affluent international investors (primarily based in China) regarding real estate acquisition (land and residential properties) within Japan.<br><br>
                 Our firm maintains strategic partnerships with prominent enterprises in China, including "Shanghai Zhouxing Corporate Management Consulting Co., Ltd." and "Shanghai Yulu Yun Information Technology Co., Ltd." Upon the successful launch of domestic investment projects, we offer seamless local asset management and property operation services in Japan.<br><br>
                 Furthermore, moving beyond simple transactions, we support the maximization of investment values through expert, full-cycle execution—spanning from land acquisition planning to the development and ultimate operation of boutique hotels and premium apartments.
@@ -262,10 +292,8 @@
         </div>
 
         <div class="business-card">
-            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
-                ■ Jewelry & E-Commerce Business
-            </strong>
-            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+            <span class="business-title">■ Jewelry & E-Commerce Business</span>
+            <p style="font-size: 0.9rem; color: #222; margin: 0; text-align: justify;">
                 Launched in January 2026. Rooted in rigorous pearl selection standards and our sophisticated "Mode Style" design philosophy, we manage the complete creation, manufacturing, cross-border e-commerce, and import/export trade of our house pearl jewelry brand. We deliver a modern pearl aesthetic that embodies quiet elegance and understated maturity on a global scale.
             </p>
             
@@ -273,7 +301,7 @@
                 <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
                     <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
                 </a>
-                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                <div style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-title); font-style: italic;">
                     The Undefined Mode Style — Refined Pearl Aesthetics
                 </div>
                 <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer" class="brand-btn">
