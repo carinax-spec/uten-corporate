@@ -17,14 +17,14 @@
             margin: 0; padding: 0;
             background-color: var(--bg-light);
             color: var(--text-main);
-            line-height: 2.2; /* 💡 稍微拉高行高，增強整體的空氣閱讀感 */
+            line-height: 2.2;
             -webkit-font-smoothing: antialiased;
         }
 
         /* 1. 題圖 Banner 樣式 */
         .hero-banner {
             width: 100%;
-            height: 480px; /* 💡 略微加高，營造更強烈的空間視覺衝擊 */
+            height: 480px;
             overflow: hidden;
             position: relative;
             background-color: #eee;
@@ -38,15 +38,15 @@
 
         main {
             max-width: 800px;
-            margin: 80px auto 120px auto; /* 💡 加大主體區域的上下留白 */
-            padding: 0 40px; /* 💡 加大兩側留白，讓畫面更聚焦、更有呼吸感 */
+            margin: 80px auto 120px auto;
+            padding: 0 40px;
         }
 
         /* 2. 題頭標題與 Logo 佈局 */
         .corporate-header {
             border-bottom: 1px solid var(--accent-border);
-            padding-bottom: 50px;
-            margin-bottom: 80px; /* 💡 加大與下方內容的間距 */
+            padding-bottom: 45px;
+            margin-bottom: 80px;
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -67,16 +67,27 @@
             margin: 0;
         }
 
+        /* 💡 移至題頭的公司標語樣式：字體放大、維持優雅寬字距 */
+        .brand-mantra-header {
+            font-size: 1.05rem; /* 大幅調大字體，凸顯氣勢 */
+            color: var(--text-main); /* 使用主體深色，使其更清晰醒目 */
+            letter-spacing: 0.3rem; /* 更加寬展的字距，大字也不顯粗俗 */
+            display: block;
+            margin-top: 20px; /* 與上方公司名稱拉開距離 */
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
         .company-sub {
             font-size: 0.85rem;
             color: var(--text-muted);
             letter-spacing: 1px;
-            margin-top: 12px;
+            margin-top: 10px;
             text-transform: uppercase;
         }
 
         .section-block {
-            margin-bottom: 120px; /* 💡 區塊與區塊之間拉開極大留白，這是日系高奢網頁的精髓 */
+            margin-bottom: 120px;
             text-align: left;
         }
 
@@ -85,18 +96,8 @@
             letter-spacing: 3px;
             text-transform: uppercase;
             color: var(--text-main);
-            margin-bottom: 10px; /* 💡 縮小與下方標語的距離 */
+            margin-bottom: 35px; /* 標語移走後，恢復標準高級留白間距 */
             font-weight: bold;
-        }
-
-        /* 💡 新增：羽天專屬靈魂標語樣式（極簡、寬字距、優雅下留白） */
-        .brand-mantra {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            letter-spacing: 0.25rem; /* 超寬字距，營造清冷感 */
-            display: block;
-            margin-bottom: 40px; /* 與主文之間拉開舒適的留白 */
-            font-weight: normal;
         }
 
         .concept-p {
@@ -124,7 +125,7 @@
             align-items: center;
             background-color: #f9f9f9;
             border: 1px solid #eaeaea;
-            padding: 60px 40px; /* 💡 擴大灰色容器內的內部留白，凸顯高級感 */
+            padding: 60px 40px;
             margin-top: 40px;
             text-align: center;
         }
@@ -181,7 +182,7 @@
         }
 
         footer {
-            margin-top: 160px; /* 💡 頁尾大幅度下移，留足最後的呼吸空間 */
+            margin-top: 160px;
             border-top: 1px solid var(--accent-border);
             padding-top: 40px;
             font-size: 0.75rem;
@@ -200,12 +201,12 @@
     <header class="corporate-header">
         <img src="logo.png" alt="羽天株式会社 Logo" class="company-logo">
         <h1 class="company-name">羽天株式会社</h1>
+        <span class="brand-mantra-header">羽ばたいて天に至る。</span>
         <div class="company-sub">Uten Co., Ltd.</div>
     </header>
 
     <section class="section-block">
         <h2>Philosophy</h2>
-        <span class="brand-mantra">羽ばたいて天に至る。</span>
         <p class="concept-p">
             <strong>「新たな価値を創造し、洗練された未来を紡ぐ」</strong><br><br>
             私たち羽天株式会社は、多様化する現代のライフスタイルに寄り添い、確かな品質と独自の審美眼を通じて、社会に新たな価値を提案する企業です。<br><br>
