@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽天株式会社 | Uten Co., Ltd. Official Site</title>
+    <style>
+        :root {
+            --bg-light: #fdfdfd;
+            --text-main: #1a1a1a;
+            --text-muted: #666666;
+            --accent-border: #cccccc;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 2;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 1. 題圖 Banner 樣式 */
+        .hero-banner {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eee;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%); /* 微微去色營造冷都感 */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto 100px auto;
+            padding: 0 30px;
+        }
+
+        .corporate-header {
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        .company-name {
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .company-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .section-block {
+            margin-bottom: 80px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            margin-bottom: 35px;
+            font-weight: bold;
+        }
+
+        .concept-p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        /* 業務區塊卡片與配圖佈局 */
+        .business-card {
+            margin-bottom: 60px;
+        }
+        .business-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: #eee;
+        }
+
+        /* 企業概要 表格樣式 */
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .profile-table tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+        .profile-table th {
+            width: 25%;
+            text-align: left;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+        .profile-table td {
+            padding: 15px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        footer {
+            margin-top: 120px;
+            border-top: 1px solid var(--accent-border);
+            padding-top: 30px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1. 頂部大題圖 (梅田超高辦公樓背景) -->
+<div class="hero-banner">
+    <!-- 生成好照片後，把 banner.jpg 替換為您的圖片檔名 -->
+    <img src="banner.jpg" alt="Uten Co., Ltd. Headquarter Area - Umeda, Osaka">
+</div>
+
+<main>
+    <!-- 2. 企業識別 -->
+    <header class="corporate-header">
+        <h1 class="company-name">羽天株式会社</h1>
+        <div class="company-sub">Uten Co., Ltd.</div>
+    </header>
+
+    <!-- 3. 企業理念 -->
+    <section class="section-block">
+        <h2>Philosophy</h2>
+        <p class="concept-p">
+            <strong>「新たな価値を創造し、洗練された未来を紡ぐ」</strong><br><br>
+            私たち羽天株式会社は、多様化する現代のライフスタイルに寄り添い、確かな品質と独自の審美眼を通じて、社会に新たな価値を提案する企業です。<br><br>
+            グローバルな視野を持ちながら、細部にまでこだわる日本の美意識を大切に。私たちは常に革新と挑戦を続け、人々の日常にささやかな豊かさと持続可能な輝きをもたらすビジネスを展開してまいります。
+        </p>
+    </section>
+
+    <!-- 4. 業務內容 (包含配圖版位) -->
+    <section class="section-block">
+        <h2>Our Business</h2>
+        
+        <!-- 業務板塊一 -->
+        <div class="business-card">
+            <!-- 諮詢辦公室場景配圖 -->
+            <img src="consulting.jpg" alt="Global Investment Consulting" class="business-img">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ 外国人投資コンサルティング事業（Global Investment Consulting）
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                海外（主に中国在住）の富裕層・準富裕層の個人投資家様を対象に、日本国内の不動産（土地・マンション）売買に関するトータルコンサルティングを提供しております。<br><br>
+                弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力関係を構築しています。海外投資家様による日本国内案件の実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
+                また、単なる物件売買にとどまらず、土地買収後のホテル・マンション建築計画の立案から落成後の運用にいたるまで、確かな実務サポートで投資価値の最大化を支援いたします。
+            </p>
+        </div>
+
+        <!-- 業務板塊二 -->
+        <div class="business-card">
+            <!-- 民宿評估現場配圖 -->
+            <img src="evaluation.jpg" alt="Hospitality Management & Consulting" class="business-img">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ 不動産（民宿・ホテル）再生＆代行運営事業（Hospitality Management & Consulting）
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                既に日本国内の不動産物件に投資されている在日・訪日外国人オーナー様を対象に、民宿やホテルといった宿泊施設の経営診断、コンサルティング、リブランディング（改革）、および代行運営サービスを展開しております。<br><br>
+                「日本に常駐していないため、現地的確な管理やトラブル対応が難しい」という海外オーナー様の不便を解消すべく、所有資産の現状をプロの視点で診断・整理し、市場ニーズに合わせた最適な「盤活（資産活性化）」プランをご提案いたします。<br><br>
+                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質なサービスを提供し、オーナー様の未来への懸念を払拭いたします。
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. 企業概要 -->
+    <section class="section-block">
+        <h2>Company Profile</h2>
+        <table class="profile-table">
+            <tr>
+                <th>会社名</th>
+                <td>羽天株式会社 （Uten Co., Ltd.）</td>
+            </tr>
+            <tr>
+                <th>所在地</th>
+                <td>大阪府大阪市</td>
+            </tr>
+            <tr>
+                <th>設立年月日</th>
+                <td>2026年1月</td>
+            </tr>
+            <tr>
+                <th>主な事業内容</th>
+                <td>ジュエリー・工芸品の企画・販売 / 電子商取引（EC）事業 / 輸出入貿易業務</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 6. 頁尾 -->
+    <footer>
+        &copy; 2026 Uten Co., Ltd. All Rights Reserved.
+    </footer>
+</main>
+
+</body>
+</html>
