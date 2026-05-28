@@ -38,11 +38,11 @@
 
         main {
             max-width: 800px;
-            margin: 40px auto 120px auto; /* 💡 縮小主體頂部留白，為右上角多語言預留視覺空間 */
+            margin: 40px auto 120px auto;
             padding: 0 40px;
         }
 
-        /* 💡 新增：右上角多語言切換模塊樣式 */
+        /* 右上角多語言切換模塊 */
         .lang-switcher {
             display: flex;
             justify-content: flex-end;
@@ -186,28 +186,66 @@
             color: var(--bg-light);
         }
 
-        /* 企業概要 表格樣式 */
+        /* 5. 企業概要 表格高級優化（比照日暮會社的高級感） */
         .profile-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #eeeeee;
         }
         .profile-table tr {
             border-bottom: 1px solid #eeeeee;
         }
+        .profile-table tr:last-child {
+            border-bottom: none;
+        }
         .profile-table th {
-            width: 25%;
+            width: 30%;
             text-align: left;
-            padding: 20px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-muted);
             font-weight: normal;
+            background-color: #fafafa;
+            border-right: 1px solid #eeeeee;
         }
         .profile-table td {
-            padding: 20px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-main);
             text-align: justify;
+        }
+
+        /* 💡 新增：Google 地圖存取區塊樣式 */
+        .map-container {
+            width: 100%;
+            margin-top: 35px;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            box-sizing: border-box;
+        }
+        .map-address-text {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .map-iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background-color: #eee;
+        }
+        .map-iframe-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
         }
 
         footer {
@@ -228,7 +266,7 @@
 </div>
 
 <main>
-    <!-- 💡 新增：多語言切換模塊（極簡文字風格） -->
+    <!-- 多語言切換模塊 -->
     <nav class="lang-switcher">
         <a href="index.html" class="active">JP</a>
         <span class="lang-separator">/</span>
@@ -267,7 +305,7 @@
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 海外（主に中国在住）の富裕層・準富裕層の個人投資家様を対象に、日本国内の不動産（土地・マンション）売買に関するトータルコンサルティングを提供しております。<br><br>
-                弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力關係を構築しています。海外投資家様による日本国内案件の実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
+                弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力関係を構築しています。海外投資家様による日本国内案件の実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
                 また、単なる物件売買にとどまらず、土地買収後のホテル・マンション建築計画の立案から落成後の運用にいたるまで、確かな実務サポートで投資価値の最大化を支援いたします。
             </p>
         </div>
@@ -278,7 +316,7 @@
                 ■ ジュエリー・工芸品企画＆EC事業（Jewelry & E-Commerce Business）
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
-                2026年1月より本格始動。独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美學に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美學をグローバルにお届けいたします。
+                2026年1月より本格始動。独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
             </p>
             
             <!-- 🔗 珠寶官網大橫圖點擊跳轉區塊 -->
@@ -296,7 +334,7 @@
         </div>
     </section>
 
-    <!-- 5. 企業概要 -->
+    <!-- 5. 企業概要（💡 已按照全新格式要求完整修改） -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -309,6 +347,14 @@
                 <td>2024年3月</td>
             </tr>
             <tr>
+                <th>代表取締役</th>
+                <td>薛 原 （セツ ハラ）</td>
+            </tr>
+            <tr>
+                <th>資本金</th>
+                <td>3,000万円</td>
+            </tr>
+            <tr>
                 <th>主な事業内容</th>
                 <td>
                     ・海外投資コンサルティング業務<br>
@@ -316,6 +362,20 @@
                 </td>
             </tr>
         </table>
+    </section>
+
+    <!-- 💡 新增：Google地圖存取區塊（比照日暮會社完美版型） -->
+    <section class="section-block">
+        <h2>Access</h2>
+        <div class="map-container">
+            <div class="map-address-text">
+                〒542-0081 大阪府大阪市中央区南久宝寺町４丁目５番17号 アップウェル船場２０1室
+            </div>
+            <div class="map-iframe-wrapper">
+                <!-- Google地圖精確定位嵌入連結 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.282869408226!2d135.49652257635677!3d34.67343468499692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a1c6e949ff1f%3A0xe54fb3a0c0b62e4!2z44CSNTQyLTAwODEgT8 didnYWthLCBDaHVvIFdhcmQsIE1pbmFtaWt5dWhvamltYWNoaSwgNf choresbS014oiSMScg44Ki44OD44OX44Km44Kn44Or6Ii56KeS!5e0!3m2!1sja!2sjp!4v1716900000000!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- 6. 頁尾 -->
