@@ -17,14 +17,14 @@
             margin: 0; padding: 0;
             background-color: var(--bg-light);
             color: var(--text-main);
-            line-height: 2;
+            line-height: 2.2; /* 💡 稍微拉高行高，增強整體的空氣閱讀感 */
             -webkit-font-smoothing: antialiased;
         }
 
         /* 1. 題圖 Banner 樣式 */
         .hero-banner {
             width: 100%;
-            height: 450px;
+            height: 480px; /* 💡 略微加高，營造更強烈的空間視覺衝擊 */
             overflow: hidden;
             position: relative;
             background-color: #eee;
@@ -38,15 +38,15 @@
 
         main {
             max-width: 800px;
-            margin: 60px auto 100px auto;
-            padding: 0 30px;
+            margin: 80px auto 120px auto; /* 💡 加大主體區域的上下留白 */
+            padding: 0 40px; /* 💡 加大兩側留白，讓畫面更聚焦、更有呼吸感 */
         }
 
         /* 2. 題頭標題與 Logo 佈局 */
         .corporate-header {
             border-bottom: 1px solid var(--accent-border);
-            padding-bottom: 40px;
-            margin-bottom: 60px;
+            padding-bottom: 50px;
+            margin-bottom: 80px; /* 💡 加大與下方內容的間距 */
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -57,11 +57,11 @@
             height: 100px;
             width: auto;
             object-fit: contain;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .company-name {
-            font-size: 2rem;
+            font-size: 2.2rem;
             letter-spacing: 0.2rem;
             font-weight: 500;
             margin: 0;
@@ -71,22 +71,32 @@
             font-size: 0.85rem;
             color: var(--text-muted);
             letter-spacing: 1px;
-            margin-top: 10px;
+            margin-top: 12px;
             text-transform: uppercase;
         }
 
         .section-block {
-            margin-bottom: 80px;
+            margin-bottom: 120px; /* 💡 區塊與區塊之間拉開極大留白，這是日系高奢網頁的精髓 */
             text-align: left;
         }
 
         h2 {
             font-size: 1.1rem;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             color: var(--text-main);
-            margin-bottom: 35px;
+            margin-bottom: 10px; /* 💡 縮小與下方標語的距離 */
             font-weight: bold;
+        }
+
+        /* 💡 新增：羽天專屬靈魂標語樣式（極簡、寬字距、優雅下留白） */
+        .brand-mantra {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 0.25rem; /* 超寬字距，營造清冷感 */
+            display: block;
+            margin-bottom: 40px; /* 與主文之間拉開舒適的留白 */
+            font-weight: normal;
         }
 
         .concept-p {
@@ -97,13 +107,13 @@
 
         /* 業務區塊卡片與配圖佈局 */
         .business-card {
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
         .business-img {
             width: 100%;
-            height: 300px;
+            height: 320px;
             object-fit: cover;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             background-color: #eee;
         }
 
@@ -114,8 +124,8 @@
             align-items: center;
             background-color: #f9f9f9;
             border: 1px solid #eaeaea;
-            padding: 50px 30px;
-            margin-top: 25px;
+            padding: 60px 40px; /* 💡 擴大灰色容器內的內部留白，凸顯高級感 */
+            margin-top: 40px;
             text-align: center;
         }
         
@@ -132,8 +142,8 @@
         }
         .brand-btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 10px 45px;
+            margin-top: 30px;
+            padding: 10px 50px;
             border: 1px solid var(--text-main);
             color: var(--text-main);
             text-decoration: none;
@@ -150,7 +160,7 @@
         .profile-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 30px;
         }
         .profile-table tr {
             border-bottom: 1px solid #eeeeee;
@@ -158,22 +168,22 @@
         .profile-table th {
             width: 25%;
             text-align: left;
-            padding: 15px 0;
+            padding: 20px 0;
             font-size: 0.9rem;
             color: var(--text-muted);
             font-weight: normal;
         }
         .profile-table td {
-            padding: 15px 0;
+            padding: 20px 0;
             font-size: 0.9rem;
             color: var(--text-main);
             text-align: justify;
         }
 
         footer {
-            margin-top: 120px;
+            margin-top: 160px; /* 💡 頁尾大幅度下移，留足最後的呼吸空間 */
             border-top: 1px solid var(--accent-border);
-            padding-top: 30px;
+            padding-top: 40px;
             font-size: 0.75rem;
             color: var(--text-muted);
             letter-spacing: 1px;
@@ -195,10 +205,11 @@
 
     <section class="section-block">
         <h2>Philosophy</h2>
+        <span class="brand-mantra">羽ばたいて天に至る。</span>
         <p class="concept-p">
             <strong>「新たな価値を創造し、洗練された未来を紡ぐ」</strong><br><br>
             私たち羽天株式会社は、多様化する現代のライフスタイルに寄り添い、確かな品質と独自の審美眼を通じて、社会に新たな価値を提案する企業です。<br><br>
-            グローバルな視野を持ちながら、細部にまでこだわる日本の美意識を大切に。私たちは常に革新と挑戦を続け, 人々の日常にささやかな豊かさと持続可能な輝きをもたらすビジネスを展開してまいります。
+            グローバルな視野を持ちながら、細部にまでこだわる日本の美意識を大切に。私たちは常に革新と挑戦を続け、人々の日常にささやかな豊かさと持続可能な輝きをもたらすビジネスを展開してまいります。
         </p>
     </section>
 
@@ -222,7 +233,7 @@
                 ■ ジュエリー・工芸品企画＆EC事業（Jewelry & E-Commerce Business）
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
-                2026年1月より本格始動。独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美學に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美學をグローバルにお届けいたします。
+                2026年1月より本格始動。独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
             </p>
             
             <div class="brand-link-container">
@@ -254,7 +265,7 @@
                 <th>主な事業内容</th>
                 <td>
                     ・海外投資コンサルティング業務<br>
-                    ・ジュエリー・工芸品の企画・販売、EC事業および輸出入貿易業務
+                    ・ジュエリー・工芸品企画、EC事業および輸出入貿易業務
                 </td>
             </tr>
         </table>
@@ -263,7 +274,7 @@
     <footer>
         <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
             <strong>羽天株式会社 | Uten Co., Ltd.</strong><br>
-            所在地：〒542-0081 大阪府大阪市中央区南久宝寺町４丁目５番１７号 アップウェル船場２０１室<br>
+            所在地：〒542-0081 大阪府大阪市中央区南久宝寺町４丁目５番17号 アップウェル船場２０1室<br>
             Tel：06-7220-9735
         </div>
         <div style="color: var(--text-muted); font-size: 0.75rem;">
