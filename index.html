@@ -53,7 +53,6 @@
             align-items: flex-start;
         }
 
-        /* 💡 頂部母公司 Logo：高度已放大 2 倍至 100px */
         .company-logo {
             height: 100px;
             width: auto;
@@ -108,24 +107,25 @@
             background-color: #eee;
         }
 
-        /* 珠寶品牌專用 Logo 引流區域樣式 */
+        /* 珠寶品牌引流展示區域（針對橫向大圖片進行完美優化） */
         .brand-link-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #f9f9f9;
             border: 1px solid #eaeaea;
-            padding: 40px 20px;
+            padding: 50px 30px;
             margin-top: 25px;
             text-align: center;
         }
         
-        /* 💡 業務欄目珠寶 Logo：高度已放大 2 倍至 90px */
+        /* 💡 針對大橫圖進行的最佳化樣式：高度自適應，最大寬度 80% */
         .jewelry-brand-logo {
-            height: 90px;
-            width: auto;
+            max-width: 80%;
+            height: auto;
+            max-height: 150px; /* 限制最大高度，防止大橫圖過於突兀 */
             object-fit: contain;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             transition: opacity 0.2s ease;
         }
         .jewelry-brand-logo:hover {
@@ -133,8 +133,8 @@
         }
         .brand-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 35px;
+            margin-top: 25px;
+            padding: 10px 45px;
             border: 1px solid var(--text-main);
             color: var(--text-main);
             text-decoration: none;
@@ -236,9 +236,8 @@
             </p>
         </div>
 
-        <!-- 業務板塊三 -->
+        <!-- 業務板塊三（已移除崩潰的獨立配圖，集中火力由大橫圖引流） -->
         <div class="business-card">
-            <img src="jewelry.jpg" alt="Jewelry & E-Commerce Business" class="business-img">
             <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
                 ■ ジュエリー・工芸品企画＆EC事業（Jewelry & E-Commerce Business）
             </strong>
@@ -246,9 +245,10 @@
                 独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
             </p>
             
-            <!-- 🔗 珠寶官網 Logo 點擊跳轉區塊 -->
+            <!-- 🔗 珠寶官網大橫圖點擊跳轉區塊 -->
             <div class="brand-link-container">
                 <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
+                    <!-- 💡 您新做的大橫向 Logo 圖片，請務必命名為 jewelry-logo.png 上傳至這個倉庫 -->
                     <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
                 </a>
                 <div style="font-size: 0.85rem; color: var(--text-muted);">
