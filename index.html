@@ -53,12 +53,11 @@
             align-items: flex-start;
         }
 
-        /* Logo 圖片樣式（可根據實際 Logo 形狀微調高度） */
         .company-logo {
-            height: 50px; /* 預設高度，可根據您的 Logo 比例自行調整 */
+            height: 50px;
             width: auto;
             object-fit: contain;
-            margin-bottom: 15px; /* 與下方公司名稱的間距 */
+            margin-bottom: 15px;
         }
 
         .company-name {
@@ -108,6 +107,43 @@
             background-color: #eee;
         }
 
+        /* 💡 新增：珠寶品牌專用 Logo 引流區域樣式 */
+        .brand-link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #eaeaea;
+            padding: 40px 20px;
+            margin-top: 25px;
+            text-align: center;
+        }
+        .jewelry-brand-logo {
+            height: 45px; /* 您可以根據珠寶 Logo 的形狀調整高度 */
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 20px;
+            transition: opacity 0.2s ease;
+        }
+        .jewelry-brand-logo:hover {
+            opacity: 0.7;
+        }
+        .brand-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 35px;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .brand-btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-light);
+        }
+
         /* 企業概要 表格樣式 */
         .profile-table {
             width: 100%;
@@ -129,6 +165,7 @@
             padding: 15px 0;
             font-size: 0.9rem;
             color: var(--text-main);
+            text-align: justify;
         }
 
         footer {
@@ -149,9 +186,8 @@
 </div>
 
 <main>
-    <!-- 2. 企業識別（已新增 Logo 版位） -->
+    <!-- 2. 企業識別 -->
     <header class="corporate-header">
-        <!-- 💡 請將您的 Logo 圖片命名為 logo.png 並上傳至 GitHub，網頁就會自動讀取 -->
         <img src="logo.png" alt="羽天株式会社 Logo" class="company-logo">
         <h1 class="company-name">羽天株式会社</h1>
         <div class="company-sub">Uten Co., Ltd.</div>
@@ -193,12 +229,36 @@
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 既に日本国内の不動産物件に投資されている在日・訪日外国人オーナー様を対象に、民宿やホテルといった宿泊施設の経営診断、コンサルティング、リブランディング（改革）、および代行運営サービスを展開しております。<br><br>
                 「日本に常駐していないため、現地的確な管理やトラブル対応が難しい」という海外オーナー様の不便を解消すべく、所有資産の現状をプロの視点で診断・整理し、市場ニーズに合わせた最適な「盤活（資産活性化）」プランをご提案いたします。<br><br>
-                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質な服务を提供し、オーナー様の未来への懸念を払拭いたします。
+                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質なサービスを提供し、オーナー様の未来への懸念を払拭いたします。
             </p>
+        </div>
+
+        <!-- 💡 業務板塊三：新增珠寶 Sub-brand 自主引流區塊 -->
+        <div class="business-card">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ ジュエリー・工芸品企画＆EC事業（Jewelry & E-Commerce Business）
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
+            </p>
+            
+            <!-- 🔗 珠寶官網 Logo 點擊跳轉區塊 -->
+            <div class="brand-link-container">
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
+                    <!-- 💡 請將您的珠寶網頁 LOGO 命名為 jewelry-logo.png 上傳至這個倉庫 -->
+                    <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
+                </a>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    甘すぎない Mode Style — 洗練された真珠美学
+                </div>
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer" class="brand-btn">
+                    Official Brand Site ↗
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- 5. 企業概要（唯一保留完整地址之處） -->
+    <!-- 5. 企業概要 -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -207,31 +267,32 @@
                 <td>羽天株式会社 （Uten Co., Ltd.）</td>
             </tr>
             <tr>
-                <th>所在地</th>
-                <td>〒542-0081 大阪府大阪市中央区南久宝寺町４丁目５番１７号 アップウェル船場２０１室</td>
-            </tr>
-            <tr>
-                <th>電話番号</th>
-                <td>06-7220-9735</td>
-            </tr>
-            <tr>
                 <th>設立年月日</th>
                 <td>2026年1月</td>
             </tr>
             <tr>
                 <th>主な事業内容</th>
-                <td>ジュエリー・工芸品の企画・販売 / 電子商取引（EC）事業 / 輸出入貿易業務</td>
+                <td>
+                    ・海外投資コンサルティング業務<br>
+                    ・不動産運営・管理コンサルティング業務<br>
+                    ・ジュエリー・工芸品の企画・販売<br>
+                    ・電子商取引（EC）事業<br>
+                    ・輸出入貿易業務
+                </td>
             </tr>
         </table>
     </section>
 
-    <!-- 6. 頁尾（已刪除冗餘地址，極簡洗練） -->
+    <!-- 6. 頁尾 -->
     <footer>
-        <div style="margin-bottom: 15px; font-size: 0.8rem; line-height: 1.8;">
-            羽天株式会社 | Uten Co., Ltd.<br>
-            Tel: 06-7220-9735
+        <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
+            <strong>羽天株式会社 | Uten Co., Ltd.</strong><br>
+            所在地：〒542-0081 大阪府大阪市中央区南久宝寺町４丁目５番１７号 アップウェル船場２０１室<br>
+            Tel：06-7220-9735
         </div>
-        &copy; 2026 Uten Co., Ltd. All Rights Reserved.
+        <div style="color: var(--text-muted); font-size: 0.75rem;">
+            &copy; 2026 Uten Co., Ltd. All Rights Reserved.
+        </div>
     </footer>
 </main>
 
