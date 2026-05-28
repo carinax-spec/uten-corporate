@@ -14,7 +14,6 @@
             --text-main: #1a1a1a;
             --text-muted: #666666;
             --accent-border: #cccccc;
-            /* 💡 定義英文版專屬的字體家族 */
             --font-title: 'Playfair Display', 'Georgia', serif;
             --font-body: 'Helvetica Neue', Arial, sans-serif;
         }
@@ -24,7 +23,7 @@
             margin: 0; padding: 0;
             background-color: var(--bg-light);
             color: var(--text-main);
-            line-height: 1.7; /* 💡 從 2.0 收緊至 1.7，讓英文段落更緊湊、更嚴謹 */
+            line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -109,7 +108,6 @@
             line-height: 1.2;
         }
 
-        /* 💡 優化後的 Slogan 樣式：使用優雅的襯線體，字距適中，充滿智性美 */
         .brand-mantra-header {
             font-family: var(--font-title);
             font-size: 1.25rem;
@@ -119,7 +117,7 @@
             margin-top: 30px;
             margin-bottom: 5px;
             font-weight: 500;
-            font-style: italic; /* 保持意大利斜體的浪漫，但字體更高級 */
+            font-style: italic;
             line-height: 1.4;
         }
 
@@ -128,12 +126,11 @@
             text-align: left;
         }
 
-        /* 💡 區塊大標題改為襯線體，像時尚雜誌一樣端莊大氣 */
         h2 {
             font-family: var(--font-title);
             font-size: 1.6rem;
             letter-spacing: 1px;
-            text-transform: none; /* 取消純大寫，改為首字母大寫，更具當代設計感 */
+            text-transform: none;
             color: var(--text-main);
             margin-bottom: 30px;
             font-weight: 600;
@@ -145,7 +142,6 @@
             text-align: justify;
         }
 
-        /* 💡 稍微強化核心理念首句的視覺卷重 */
         .concept-lead {
             font-family: var(--font-title);
             font-size: 1.15rem;
@@ -214,27 +210,66 @@
             color: var(--bg-light);
         }
 
+        /* 💡 Company Profile 表格高奢專業化升級 */
         .profile-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #eeeeee;
         }
         .profile-table tr {
             border-bottom: 1px solid #eeeeee;
         }
+        .profile-table tr:last-child {
+            border-bottom: none;
+        }
         .profile-table th {
             width: 30%;
             text-align: left;
-            padding: 18px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-muted);
-            font-weight: 600; /* 💡 稍微加粗項目名稱，看起來更有秩序 */
+            font-weight: 600;
+            background-color: #fafafa;
+            border-right: 1px solid #eeeeee;
         }
         .profile-table td {
-            padding: 18px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-main);
             text-align: justify;
+        }
+
+        /* 💡 Google Map 區塊樣式 */
+        .map-container {
+            width: 100%;
+            margin-top: 35px;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            box-sizing: border-box;
+        }
+        .map-address-text {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .map-iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background-color: #eee;
+        }
+        .map-iframe-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
         }
 
         footer {
@@ -254,6 +289,7 @@
 </div>
 
 <main>
+    <!-- Language Switcher -->
     <nav class="lang-switcher">
         <a href="index.html">JP</a>
         <span class="lang-separator">/</span>
@@ -262,6 +298,7 @@
         <a href="index-cn.html">CN</a>
     </nav>
 
+    <!-- Corporate Header -->
     <header class="corporate-header">
         <img src="logo.png" alt="Uten Co., Ltd. Logo" class="company-logo">
         <h1 class="company-name">Uten Co., Ltd.</h1>
@@ -269,6 +306,7 @@
         <span class="brand-mantra-header">Spread the wings, reach the sky.</span>
     </header>
 
+    <!-- Philosophy -->
     <section class="section-block">
         <h2>Corporate Philosophy</h2>
         <p class="concept-p">
@@ -278,9 +316,11 @@
         </p>
     </section>
 
+    <!-- Our Business -->
     <section class="section-block">
         <h2>Core Businesses</h2>
         
+        <!-- Business 1 -->
         <div class="business-card">
             <img src="consulting.jpg" alt="Global Investment Consulting" class="business-img">
             <span class="business-title">■ Global Investment Consulting Business</span>
@@ -291,6 +331,7 @@
             </p>
         </div>
 
+        <!-- Business 2 -->
         <div class="business-card">
             <span class="business-title">■ Jewelry & E-Commerce Business</span>
             <p style="font-size: 0.9rem; color: #222; margin: 0; text-align: justify;">
@@ -311,6 +352,7 @@
         </div>
     </section>
 
+    <!-- Company Profile (💡 Updated Format) -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -323,6 +365,14 @@
                 <td>March 2024</td>
             </tr>
             <tr>
+                <th>Representative Director</th>
+                <td>Yuan Xue (セツ ハラ / Setsu Hara)</td>
+            </tr>
+            <tr>
+                <th>Capital Stock</th>
+                <td>30,000,000 JPY</td>
+            </tr>
+            <tr>
                 <th>Core Businesses</th>
                 <td>
                     · Global Investment Consulting Services<br>
@@ -332,6 +382,20 @@
         </table>
     </section>
 
+    <!-- 💡 Added: Google Map Access Component -->
+    <section class="section-block">
+        <h2>Access</h2>
+        <div class="map-container">
+            <div class="map-address-text">
+                Room 201, Upwell Semba, 4-5-17 Minamikyuhojimachi, Chuo-ku, Osaka, 542-0081, Japan
+            </div>
+            <div class="map-iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.282869408226!2d135.49652257635677!3d34.67343468499692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a1c6e949ff1f%3A0xe54fb3a0c0b62e4!2z44CSNTQyLTAwODEgT8 didnYWthLCBDaHVvIFdhcmQsIE1pbmFtaWt5dWhvamltYWNoaSwgNf choresbS014oiSMScg44Ki44OD44OX44Km44Kn44Or6Ii56KeS!5e0!3m2!1sen!2sjp!4v1716900000000!5m2!1sen!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
             <strong>Uten Co., Ltd.</strong><br>
