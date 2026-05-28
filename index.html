@@ -107,7 +107,7 @@
             background-color: #eee;
         }
 
-        /* 珠寶品牌引流展示區域（針對橫向大圖片進行完美優化） */
+        /* 珠寶品牌引流展示區域 */
         .brand-link-container {
             display: flex;
             flex-direction: column;
@@ -119,11 +119,10 @@
             text-align: center;
         }
         
-        /* 💡 針對大橫圖進行的最佳化樣式：高度自適應，最大寬度 80% */
         .jewelry-brand-logo {
             max-width: 80%;
             height: auto;
-            max-height: 150px; /* 限制最大高度，防止大橫圖過於突兀 */
+            max-height: 150px;
             object-fit: contain;
             margin-bottom: 25px;
             transition: opacity 0.2s ease;
@@ -183,20 +182,17 @@
 </head>
 <body>
 
-<!-- 1. 頂部大題圖 -->
 <div class="hero-banner">
     <img src="banner.jpg" alt="Uten Co., Ltd. Headquarter Area - Umeda, Osaka">
 </div>
 
 <main>
-    <!-- 2. 企業識別 -->
     <header class="corporate-header">
         <img src="logo.png" alt="羽天株式会社 Logo" class="company-logo">
         <h1 class="company-name">羽天株式会社</h1>
         <div class="company-sub">Uten Co., Ltd.</div>
     </header>
 
-    <!-- 3. 企業理念 -->
     <section class="section-block">
         <h2>Philosophy</h2>
         <p class="concept-p">
@@ -206,11 +202,9 @@
         </p>
     </section>
 
-    <!-- 4. 業務內容 -->
     <section class="section-block">
         <h2>Our Business</h2>
         
-        <!-- 業務板塊一 -->
         <div class="business-card">
             <img src="consulting.jpg" alt="Global Investment Consulting" class="business-img">
             <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
@@ -218,37 +212,21 @@
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 海外（主に中国在住）の富裕層・準富裕層の個人投資家様を対象に、日本国内の不動産（土地・マンション）売買に関するトータルコンサルティングを提供しております。<br><br>
-                弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力関係を構築しています。海外投資家様による日本国内案件の実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
+                弊社は、中国の有力企業である「上海舟行企業管理顧問有限公司」および「上海羽禄云信息技术有限公司」と強固な協力関係を構築しています。海外投資家様による日本国内案件的実行・落地（ローンチ）後は、弊社が日本現地における運営やプロパティマネジメント（管理）を一手に担う体制を整えています。<br><br>
                 また、単なる物件売買にとどまらず、土地買収後のホテル・マンション建築計画の立案から落成後の運用にいたるまで、確かな実務サポートで投資価値の最大化を支援いたします。
             </p>
         </div>
 
-        <!-- 業務板塊二 -->
-        <div class="business-card">
-            <img src="evaluation.jpg" alt="Hospitality Management & Consulting" class="business-img">
-            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
-                ■ 不動産（民宿・ホテル）再生＆代行運営事業（Hospitality Management & Consulting）
-            </strong>
-            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
-                既に日本国内の不動産物件に投資されている在日・訪日外国人オーナー様を対象に、民宿やホテルといった宿泊施設の経営診断、コンサルティング、リブランディング（改革）、および代行運営サービスを展開しております。<br><br>
-                「日本に常駐していないため、現地的確な管理やトラブル対応が難しい」という海外オーナー様の不便を解消すべく、所有資産の現状をプロの視点で診断・整理し、市場ニーズに合わせた最適な「盤活（資産活性化）」プランをご提案いたします。<br><br>
-                現地での実務経験豊富な宿泊施設運営専門チームが、日々のオペレーションからカスタマーサービスまで一貫して高品質なサービスを提供し、オーナー様の未来への懸念を払拭いたします。
-            </p>
-        </div>
-
-        <!-- 業務板塊三（已移除崩潰的獨立配圖，集中火力由大橫圖引流） -->
         <div class="business-card">
             <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
                 ■ ジュエリー・工芸品企画＆EC事業（Jewelry & E-Commerce Business）
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
-                独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
+                2026年1月より本格始動。独自の厳格な真珠選別眼と洗練された「Mode Style」のデザイン美学に基づき、自社真珠ジュエリーブランドの企画・製造、および国内外へのオンライン（EC）展開、輸出入貿易業務を行っております。日常に静かな気品を添える、甘すぎないモダンな真珠美学をグローバルにお届けいたします。
             </p>
             
-            <!-- 🔗 珠寶官網大橫圖點擊跳轉區塊 -->
             <div class="brand-link-container">
                 <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
-                    <!-- 💡 您新做的大橫向 Logo 圖片，請務必命名為 jewelry-logo.png 上傳至這個倉庫 -->
                     <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
                 </a>
                 <div style="font-size: 0.85rem; color: var(--text-muted);">
@@ -261,7 +239,6 @@
         </div>
     </section>
 
-    <!-- 5. 企業概要 -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -271,7 +248,7 @@
             </tr>
             <tr>
                 <th>設立年月日</th>
-                <td>2026年1月</td>
+                <td>2024年3月</td>
             </tr>
             <tr>
                 <th>主な事業内容</th>
@@ -286,7 +263,6 @@
         </table>
     </section>
 
-    <!-- 6. 頁尾 -->
     <footer>
         <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
             <strong>羽天株式会社 | Uten Co., Ltd.</strong><br>
@@ -294,7 +270,7 @@
             Tel：06-7220-9735
         </div>
         <div style="color: var(--text-muted); font-size: 0.75rem;">
-            &copy; 2026 Uten Co., Ltd. All Rights Reserved.
+            &copy; 2024 - 2026 Uten Co., Ltd. All Rights Reserved.
         </div>
     </footer>
 </main>
