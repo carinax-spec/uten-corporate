@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>羽天株式會社 | Uten Co., Ltd. 官方網站</title>
+    <style>
+        :root {
+            --bg-light: #fdfdfd;
+            --text-main: #1a1a1a;
+            --text-muted: #666666;
+            --accent-border: #cccccc;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "PingFang HK", "PingFang TC", "Noto Sans TC", sans-serif;
+            margin: 0; padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 2.2;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero-banner {
+            width: 100%;
+            height: 480px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eee;
+        }
+        .hero-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto 120px auto;
+            padding: 0 40px;
+        }
+
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+        }
+        .lang-switcher a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .lang-switcher a.active {
+            color: var(--text-main);
+            font-weight: bold;
+        }
+        .lang-switcher a:hover {
+            color: var(--text-main);
+        }
+        .lang-separator {
+            opacity: 0.3;
+        }
+
+        .corporate-header {
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 45px;
+            margin-bottom: 80px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .company-logo {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 25px;
+        }
+
+        .company-name {
+            font-size: 2.2rem;
+            letter-spacing: 0.2rem;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .company-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .brand-mantra-header {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            letter-spacing: 0.3rem;
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            font-weight: normal;
+            line-height: 1.4;
+        }
+
+        .section-block {
+            margin-bottom: 120px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            margin-bottom: 35px;
+            font-weight: bold;
+        }
+
+        .concept-p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .business-card {
+            margin-bottom: 80px;
+        }
+        .business-img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            background-color: #eee;
+        }
+
+        .brand-link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #eaeaea;
+            padding: 60px 40px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .jewelry-brand-logo {
+            max-width: 80%;
+            height: auto;
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 25px;
+            transition: opacity 0.2s ease;
+        }
+        .jewelry-brand-logo:hover {
+            opacity: 0.7;
+        }
+        .brand-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 50px;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .brand-btn:hover {
+            background-color: var(--text-main);
+            color: var(--bg-light);
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        .profile-table tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+        .profile-table th {
+            width: 25%;
+            text-align: left;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+        .profile-table td {
+            padding: 20px 0;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        footer {
+            margin-top: 160px;
+            border-top: 1px solid var(--accent-border);
+            padding-top: 40px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-banner">
+    <img src="banner.jpg" alt="羽天株式會社 總部區域">
+</div>
+
+<main>
+    <nav class="lang-switcher">
+        <a href="index.html">JP</a>
+        <span class="lang-separator">/</span>
+        <a href="index-en.html">EN</a>
+        <span class="lang-separator">/</span>
+        <a href="index-cn.html" class="active">CN</a>
+    </nav>
+
+    <header class="corporate-header">
+        <img src="logo.png" alt="羽天株式會社 Logo" class="company-logo">
+        <h1 class="company-name">羽天株式會社</h1>
+        <div class="company-sub">Uten Co., Ltd.</div>
+        <span class="brand-mantra-header">振翅高飛，直達天際。</span>
+    </header>
+
+    <section class="section-block">
+        <h2>Philosophy</h2>
+        <p class="concept-p">
+            <strong>「創造全新價值，編織洗練未來」</strong><br><br>
+            我們羽天株式會社，緊密貼合現代多元化的生活方式，透過無可挑剔的卓越品質與獨特的審美視角，向社會大眾提案全新價值的實業企業。<br><br>
+            在保持全球化視野的同時，我們深切珍視細緻入微的日本美學意識。我們將始終堅持創新與挑戰，透過跨國業務的多元開展，為人們的日常生活帶來內斂的富足與可持續的璀璨光芒。
+        </p>
+    </section>
+
+    <section class="section-block">
+        <h2>Our Business</h2>
+        
+        <div class="business-card">
+            <img src="consulting.jpg" alt="全球投資顧問" class="business-img">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ 外國人投資顧問事業（Global Investment Consulting）
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                我們面向海外（主要為中國內地）的富裕層及準富裕層個人投資者，提供關於日本國內不動產（土地、高級公寓）買賣的全方位諮詢與統籌顧問服務。<br><br>
+                本公司與中國本土實力企業「上海舟行企業管理顧問有限公司」及「上海羽祿雲信息技術有限公司」建立了穩固的戰略合作夥伴關係。在海外投資者的日本國內投資項目正式落地後，由我們一體化承接日本當地的物業運營與資產管理（Property Management）。<br><br>
+                同時，我們不僅侷限於單純的物件交易，更能從土地收購後的精品酒店與高級公寓建築規劃、到落成後的商業運營提供全程實務支持，助力資產價值的最大化。
+            </p>
+        </div>
+
+        <div class="business-card">
+            <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
+                ■ 珠寶工藝品企劃與電子商務事業（Jewelry & E-Commerce Business）
+            </strong>
+            <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
+                於2026年1月正式全面啟動。基於極其嚴苛的真珠篩選標準與洗練的「Mode Style」設計美學，我們獨立開展自社真珠珠寶品牌的企劃、製造，以及面向海內外的跨境電子商務（EC）與進出口貿易業務。致力於將靜謐、優雅且不流於甜膩的現代真珠美學傳遞至全球市場。
+            </p>
+            
+            <div class="brand-link-container">
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
+                    <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
+                </a>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">
+                    不流於甜膩的 Mode Style — 洗練的真珠美學
+                </div>
+                <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer" class="brand-btn">
+                    Official Brand Site ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <h2>Company Profile</h2>
+        <table class="profile-table">
+            <tr>
+                <th>公司名稱</th>
+                <td>羽天株式會社 （Uten Co., Ltd.）</td>
+            </tr>
+            <tr>
+                <th>設立日期</th>
+                <td>2024年3月</td>
+            </tr>
+            <tr>
+                <th>主要事業內容</th>
+                <td>
+                    ・海外投資諮詢與物業運營業務<br>
+                    ・真珠珠寶企劃、電商運營及全球進出口貿易業務
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
+            <strong>羽天株式會社 | Uten Co., Ltd.</strong><br>
+            所在地：〒542-0081 日本大阪府大阪市中央區南久寶寺町4丁目5番17號 Upwell Semba 201室<br>
+            Tel：06-7220-9735
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.75rem;">
+            &copy; 2024 - 2026 Uten Co., Ltd. All Rights Reserved.
+        </div>
+    </footer>
+</main>
+
+</body>
+</html>
