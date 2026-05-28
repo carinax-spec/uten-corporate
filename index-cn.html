@@ -181,27 +181,66 @@
             color: var(--bg-light);
         }
 
+        /* 💡 企業概要表格高奢優化（中文繁體同步） */
         .profile-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #eeeeee;
         }
         .profile-table tr {
             border-bottom: 1px solid #eeeeee;
         }
+        .profile-table tr:last-child {
+            border-bottom: none;
+        }
         .profile-table th {
             width: 25%;
             text-align: left;
-            padding: 20px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-muted);
             font-weight: normal;
+            background-color: #fafafa;
+            border-right: 1px solid #eeeeee;
         }
         .profile-table td {
-            padding: 20px 0;
+            padding: 22px 25px;
             font-size: 0.9rem;
             color: var(--text-main);
             text-align: justify;
+        }
+
+        /* 💡 Google 地圖存取區塊樣式（中文繁體同步） */
+        .map-container {
+            width: 100%;
+            margin-top: 35px;
+            background-color: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            box-sizing: border-box;
+        }
+        .map-address-text {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .map-iframe-wrapper {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background-color: #eee;
+        }
+        .map-iframe-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
         }
 
         footer {
@@ -221,6 +260,7 @@
 </div>
 
 <main>
+    <!-- 語言切換 -->
     <nav class="lang-switcher">
         <a href="index.html">JP</a>
         <span class="lang-separator">/</span>
@@ -229,6 +269,7 @@
         <a href="index-cn.html" class="active">CN</a>
     </nav>
 
+    <!-- 企業識別 -->
     <header class="corporate-header">
         <img src="logo.png" alt="羽天株式會社 Logo" class="company-logo">
         <h1 class="company-name">羽天株式會社</h1>
@@ -236,6 +277,7 @@
         <span class="brand-mantra-header">振翅高飛，直達天際。</span>
     </header>
 
+    <!-- 企業理念 -->
     <section class="section-block">
         <h2>Philosophy</h2>
         <p class="concept-p">
@@ -245,9 +287,11 @@
         </p>
     </section>
 
+    <!-- 業務內容 -->
     <section class="section-block">
         <h2>Our Business</h2>
         
+        <!-- 業務板塊一：投資與顧問 -->
         <div class="business-card">
             <img src="consulting.jpg" alt="全球投資顧問" class="business-img">
             <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
@@ -255,11 +299,12 @@
             </strong>
             <p style="font-size: 0.9rem; color: #333; margin: 0; text-align: justify;">
                 我們面向海外（主要為中國內地）的富裕層及準富裕層個人投資者，提供關於日本國內不動產（土地、高級公寓）買賣的全方位諮詢與統籌顧問服務。<br><br>
-                本公司與中國本土實力企業「上海舟行企業管理顧問有限公司」及「上海羽祿雲信息技術有限公司」建立了穩固的戰略合作夥伴關係。在海外投資者的日本國內投資項目正式落地後，由我們一體化承接日本當地的物業運營與資產管理（Property Management）。<br><br>
+                本公司與中國本土實力企業「上海舟行企業管理顧問有限公司」及「上海羽祿雲信息技術有限公司」建立了穩固的戰略合作夥伴關係。在海外投資者批日本國內投資項目正式落地後，由我們一體化承接日本當地的物業運營與資產管理（Property Management）。<br><br>
                 同時，我們不僅侷限於單純的物件交易，更能從土地收購後的精品酒店與高級公寓建築規劃、到落成後的商業運營提供全程實務支持，助力資產價值的最大化。
             </p>
         </div>
 
+        <!-- 業務板塊二：珠寶實業 -->
         <div class="business-card">
             <strong style="font-size: 1rem; color: var(--text-main); display: block; margin-bottom: 15px;">
                 ■ 珠寶工藝品企劃與電子商務事業（Jewelry & E-Commerce Business）
@@ -268,6 +313,7 @@
                 於2026年1月正式全面啟動。基於極其嚴苛的真珠篩選標準與洗練的「Mode Style」設計美學，我們獨立開展自社真珠珠寶品牌的企劃、製造，以及面向海內外的跨境電子商務（EC）與進出口貿易業務。致力於將靜謐、優雅且不流於甜膩的現代真珠美學傳遞至全球市場。
             </p>
             
+            <!-- 🔗 珠寶官網跳轉區塊 -->
             <div class="brand-link-container">
                 <a href="https://mellowpearl.jp" target="_blank" rel="noopener noreferrer">
                     <img src="jewelry-logo.png" alt="Mellow Pearl Japan Logo" class="jewelry-brand-logo">
@@ -282,6 +328,7 @@
         </div>
     </section>
 
+    <!-- 5. 企業概要（💡 已同步變更格式） -->
     <section class="section-block">
         <h2>Company Profile</h2>
         <table class="profile-table">
@@ -294,6 +341,14 @@
                 <td>2024年3月</td>
             </tr>
             <tr>
+                <th>代表取締役</th>
+                <td>薛 原 （セツ ハラ / Yuan Xue）</td>
+            </tr>
+            <tr>
+                <th>資本金</th>
+                <td>3,000萬日元</td>
+            </tr>
+            <tr>
                 <th>主要事業內容</th>
                 <td>
                     ・海外投資諮詢與物業運營業務<br>
@@ -303,6 +358,20 @@
         </table>
     </section>
 
+    <!-- 💡 新增：Google 地圖存取區塊（繁體中文同步） -->
+    <section class="section-block">
+        <h2>Access</h2>
+        <div class="map-container">
+            <div class="map-address-text">
+                〒542-0081 日本大阪府大阪市中央區南久寶寺町4丁目5番17號 Upwell Semba 201室
+            </div>
+            <div class="map-iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.282869408226!2d135.49652257635677!3d34.67343468499692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a1c6e949ff1f%3A0xe54fb3a0c0b62e4!2z44CSNTQyLTAwODEgT8 didnYWthLCBDaHVvIFdhcmQsIE1pbmFtaWt5dWhvamltYWNoaSwgNf choresbS014oiSMScg44Ki44OD44OX44Km44Kn44Or6Ii56KeS!5e0!3m2!1szh-TW!2sjp!4v1716900000000!5m2!1szh-TW!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
     <footer>
         <div style="margin-bottom: 20px; font-size: 0.8rem; line-height: 1.8; color: var(--text-main);">
             <strong>羽天株式會社 | Uten Co., Ltd.</strong><br>
